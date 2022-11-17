@@ -1,0 +1,113 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  width: 100%;
+  position: relative;
+  height: 100px;
+  background-color: rgb(36, 35, 35);
+}
+body{
+  background-color: rgb(10, 10, 10);
+}
+#boxSearch{
+  position: absolute;
+  right: 300px;
+  width: 300px;
+}
+#search{
+  margin-top: 50px;
+  width: 0%;
+  height: 30px;
+  background-color: rgb(10, 10, 10);
+  border: none;
+  color: white;
+  outline: none;
+  transition: all 0.2s;
+  font-size: 15px;
+}
+#btnSearch{
+  width: 50px;
+  height: 30px;
+  margin-left: -5px;
+  background-color: rgb(36, 35, 35);
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+ul li{
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:400;
+  cursor: pointer;
+}
+ul{
+  margin-left: 600px;
+  font-size: 20px;
+  color: rgb(156, 153, 153);
+}
+#btnMenu{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: 50px;
+  font-size: 20px;
+  background-color: rgb(36, 35, 35);
+  border: none;
+  color: white;
+  display: none;
+}
+
+#boxImg{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin-top: -150px;
+  margin-left: 50px;
+}
+#logo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+li:hover{
+  color: rgb(238, 236, 236);
+}
+@media screen and (max-width:1622px) {
+  ul{
+    margin-left: 400px;
+  }
+}
+@media screen and (max-width:1418px) {
+  ul{
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width:1316px) {
+  ul{
+    margin-left: 250px;
+  }
+}
+@media screen and (max-width:1230px) {
+  
+    #btnMenu{
+      display: inline-block;
+    }
+    ul{
+      display: none;
+    }
+    #boxSearch{
+      right: 200px;
+    }
+ 
+}
+@media screen and (max-width:849px){
+  #boxSearch{
+    display: none;
+  }
+}
