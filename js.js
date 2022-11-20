@@ -1,6 +1,9 @@
 const btn = document.getElementById('btnSearch');
 const input = document.getElementById('search')
 const boxcloseinput = document.getElementById('closeinput')
+const menu = document.getElementById('menu');
+const btnMenu = document.getElementById('btnMenu');
+
 
 
 
@@ -14,3 +17,10 @@ document.addEventListener('click',(e)=>{
   }
 })
 
+btnMenu.addEventListener('click',()=>{
+    if(document.getElementById('menu').style.marginLeft =='-255px'){
+      document.getElementById('menu').style.marginLeft ='0px'
+    }else{
+      document.getElementById('menu').style.marginLeft ='-255px'
+    }
+})
